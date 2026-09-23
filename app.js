@@ -1,15 +1,18 @@
 let ingresos = [
-    new Ingreso(1, "Sueldo", 400),
-    new Ingreso(2, "Venta", 400)
+    new Ingreso(1, "Quincena", 500),
+    new Ingreso(2, "Venta", 400),
+    new Ingreso(3, "Bono", 100)
 ];
 
 let egresos = [
-    new Egreso(1, "Renta", 200),
-    new Egreso(2, "Comida", 100)
+    new Egreso(1, "Alquiler", 200),
+    new Egreso(2, "Pollito", 100),
+    new Egreso(3, "Telefono", 30)
 ];
+// LO ANTERIOR SON DATOS DE PRUEBA, SE PUEDEN ELIMINAR (fd)
 
-let idIngreso = 3;
-let idEgreso = 3;
+let idIngreso = 4;
+let idEgreso = 4;
 let pestaña = "ingreso";
 
 function titulo() {

@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupuesto Mensual</title>
+    <title>Presupuesto Mensual</title>   
+    <!-- Agregamos Bootstrap para estilos y diseño responsivo ES PERMITIDO (fd) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,16 +15,16 @@
 <body class="bg-light">
 
     <div class="bg-light text-center py-4">
-        <h5 id="titulo" class="font-weight-bold">Presupuesto de Septiembre 2026</h5>
-        <h1 id="saldo" class="display-4 font-weight-bold">+ 500.00</h1>
+        <h5 id="titulo" class="font-weight-bold"></h5>
+        <h1 id="saldo" class="display-4 font-weight-bold"></h1>
         <div class="col-10 col-sm-6 col-md-4 mx-auto bg-dark text-white d-flex justify-content-between p-2 mb-2">
             <span>INGRESOS:</span>
-            <span id="totalIngresos">+800.00</span>
+            <span id="totalIngresos"></span>
         </div>
         <div
             class="col-10 col-sm-6 col-md-4 mx-auto bg-white border border-dark d-flex justify-content-between p-2 mb-2">
             <span>EGRESOS:</span>
-            <span id="totalEgresos">-300.00</span>
+            <span id="totalEgresos"></span>
         </div>
         <div>Porcentaje de gastos: <span id="porcGlobal" class="badge badge-dark">38%</span></div>
     </div>
@@ -60,9 +62,9 @@
         </div>
     </div>
 
+<!-- Agregamos los scripts de clases.js y app.js para la funcionalidad (fd) -->
     <script src="clases.js">
     </script>
-
     <script src="app.js">
     </script>
 
