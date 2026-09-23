@@ -52,7 +52,9 @@ function actualizar() {
     if (ing > 0) {
         porc = (egr * 100) / ing;
     }
-    document.getElementById("porcGlobal").textContent = Math.round(porc) + "%";
+
+    // USAMOS TO FIXED PARA REDONDEAR A 2 DECIMALES Y AGREGAMOS EL SIGNO DE PORCENTAJE (fd)
+    document.getElementById("porcGlobal").textContent = porc.toFixed(2) + "%";
 }
 
 function ver(tipo) {
@@ -87,7 +89,7 @@ function mostrar() {
             }
             let div2 = document.createElement("div");
             div2.className = "list-group-item d-flex justify-content-between align-items-center bg-white mt-2";
-            div2.innerHTML = "<span>" + egresos[j].descripcion + "</span><span>- " + egresos[j].valor.toFixed(2) + "<span class='badge badge-dark ml-2'>" + Math.round(p) + "%</span><button class='btn btn-link btn-sm text-muted' onclick='eliminarEgreso(" + egresos[j].id + ")'>x</button></span>";
+            div2.innerHTML = "<span>" + egresos[j].descripcion + "</span><span>- " + egresos[j].valor.toFixed(2) + "<span class='badge badge-dark ml-2'>" + p.toFixed(2) + "%</span><button class='btn btn-link btn-sm text-muted' onclick='eliminarEgreso(" + egresos[j].id + ")'>x</button></span>";
             lista.appendChild(div2);
         }
     }
