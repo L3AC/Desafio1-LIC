@@ -28,7 +28,12 @@ Lenguajes Interpretados en el Cliente (LIC941) – Universidad Don Bosco
  
 ## Cómo ejecutar
  
-Clonar el repositorio y abrir `index.html` en el navegador.
+Abrir `index.html` en el navegador.
  
 ## Integrantes
- - Nombre – Carnet
+
+Allan Gabriel Fuentes Galdamez - FG252001
+Luis Eduardo Alvarenga Claros -  AC250260
+Francisco Daniel Garcia Ramos - GR250170
+Francisco Adalberto De la O González - DG200422
+Julio Fernando Ruiz Ramos - RE252692

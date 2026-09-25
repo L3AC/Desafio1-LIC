@@ -9,7 +9,7 @@ let egresos = [
     new Egreso(2, "Pollito", 100),
     new Egreso(3, "Telefono", 30)
 ];
-// LO ANTERIOR SON DATOS DE PRUEBA, SE PUEDEN ELIMINAR (fd)
+// LO ANTERIOR SON DATOS DE PRUEBA, SE PUEDEN ELIMINAR 
 
 let idIngreso = 4;
 let idEgreso = 4;
@@ -56,7 +56,7 @@ function actualizar() {
         porc = (egr * 100) / ing;
     }
 
-    // USAMOS TO FIXED PARA REDONDEAR A 2 DECIMALES Y AGREGAMOS EL SIGNO DE PORCENTAJE (fd)
+    // USAMOS TO FIXED PARA REDONDEAR A 2 DECIMALES Y AGREGAMOS EL SIGNO DE PORCENTAJE
     document.getElementById("porcGlobal").textContent = porc.toFixed(2) + "%";
 }
 
