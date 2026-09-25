@@ -40,13 +40,9 @@ function totalEgresos() {
 function actualizar() {
     let ing = totalIngresos();
     let egr = totalEgresos();
-    let saldo = ing - egr;
-
-    if (saldo >= 0) {
-        document.getElementById("saldo").textContent = "+ " + saldo.toFixed(2);
-    } else {
-        document.getElementById("saldo").textContent = "- " + Math.abs(saldo).toFixed(2);
-    }
+    // Punto 2: calcular y mostrar el presupuesto disponible.
+    let saldo = calcularPresupuestoDisponible(ing, egr);
+    mostrarPresupuestoDisponible(saldo);
 
     document.getElementById("totalIngresos").textContent = "+ " + ing.toFixed(2);
     document.getElementById("totalEgresos").textContent = "- " + egr.toFixed(2);
